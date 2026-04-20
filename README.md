@@ -14,26 +14,20 @@ Target platform:
 Create and activate the environment:
 
 ```bash
-conda create -n dpsr_final python=3.10.6 pip
-conda activate dpsr_final
+conda create -n dpsr python=3.10.6
+conda activate dpsr
 ```
 
 Install the PyTorch stack first:
 
 ```bash
-conda install pytorch=2.1.2 torchvision=0.16.2 torchaudio=2.1.2 pytorch-cuda=11.8
+pip install pytorch=2.1.2 torchvision=0.16.2 torchaudio=2.1.2 pytorch-cuda=11.8
 ```
 
 Install the remaining Python packages:
 
 ```bash
 pip install -r requirements.txt
-```
-
-Point the training code to the dataset root before launching a run:
-
-```bash
-export DPSR_DATASET_PATH=/path/to/hyspecnet-11k
 ```
 
 ## Notes
